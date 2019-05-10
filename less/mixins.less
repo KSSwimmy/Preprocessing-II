@@ -1,1 +1,21 @@
 // Mixins in here
+
+.button(@bgc: #26a8ff, @width: 200px, @fC: white, @hbgc: rgb(255, 182, 0), @hfc: black ) {
+    color: @fC;
+    text-align: center;
+    background-color: @bgc;
+    width: @width;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 20px;
+    padding-top: 10px;
+   
+
+    &:hover{
+        background-color: @hbgc;
+        color: @hfc;
+
+    }
+
+
+}
