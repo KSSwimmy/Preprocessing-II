@@ -173,17 +173,16 @@ img {
   justify-content: space-between;
   border-bottom: dashed #C0C0C0;
   margin-top: 40px;
-  width: 100%;
+}
+@media (max-width: 500px) {
+  .nav-div {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .nav-div .nav2 {
   margin-bottom: 20px;
   margin-right: 10px;
-}
-@media (max-width: 500px) {
-  .nav-div .nav2 {
-    display: flex;
-    flex-direction: column-reverse;
-  }
 }
 .nav-div nav a {
   margin-right: 50px;
@@ -201,6 +200,11 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+@media (max-width: 500px) {
+  .home {
+    width: 100%;
+  }
 }
 .home .header-img {
   width: 100%;
@@ -223,9 +227,22 @@ img {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -251,6 +268,12 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .home .btn {
   color: white;
